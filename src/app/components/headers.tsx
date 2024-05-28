@@ -28,7 +28,7 @@ export default function Header(){
                     </ul>
                 </div>
                     <div className="flex-1 justify-end flex">
-                        <p>Name & EDIPI</p>
+                        <p>####</p>
                     </div>
                 </div>
             </nav>

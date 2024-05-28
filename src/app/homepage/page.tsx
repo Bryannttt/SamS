@@ -9,16 +9,19 @@ export default function LandingPage() {
                     imageSrc="https://via.placeholder.com/300"
                     altText="Placeholder Image"
                     text="This is a description text below the image."
+                    href="/homepage/pointmugu-san-nicolas"
                 />
                 <Card
                     imageSrc="https://via.placeholder.com/300"
                     altText="Placeholder Image"
                     text="Here is another card with some different text."
+                    href="/homepage/chinalake-pointmugu"
                 />
                 <Card
                     imageSrc="https://via.placeholder.com/300"
                     altText="Placeholder Image"
                     text="Here is another card with some different text."
+                    href="/homepage/northisland-sanclemente"
                 />
             </div>
         </div>

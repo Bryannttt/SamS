@@ -3,7 +3,7 @@ import styles from './header.module.css'
 
 export default function Header(){
     return (
-        <div className="w-full absolute z-10 bg-gray-800">
+        <div className="w-full sticky top-0 z-10 bg-gray-800">
             <nav className={`text-white`}>
                 <div className={`${styles.navbarcontent} 
                 relative px-4 py-4 flex justify-between

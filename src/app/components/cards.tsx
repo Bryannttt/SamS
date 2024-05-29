@@ -1,30 +1,31 @@
 import React from 'react';
 import { text } from 'stream/consumers';
 
-interface CardProps {
+interface AirportCardProps {
     imageSrc: string;
     altText: string;
     text: string;
     href: string;
 }
-
-
-
-const Card: React.FC<CardProps> = ({ imageSrc, altText, text,href }) => {
-    return (
-        <div style={styles.card}>
-            <img src={imageSrc} alt={altText} style={styles.image} />
-            <div style={styles.textContainer}>
-                <p style={styles.text}>{text}</p>
+export function AirportPairCard(props: AirportCardProps){
+        return (
+            <div style={styles.card}>
+                <img src={props.imageSrc} alt={props.altText} style={styles.image} />
+                <div style={styles.textContainer}>
+                    <p style={styles.text}>{props.text}</p>
+                </div>
+                <div style={styles.buttoncontainer}>
+                   <a href= {props.href}>
+                     <button type= "button" style={styles.button}>BOOK FLIGHT </button></a>
+                </div>
             </div>
-            <div style={styles.buttoncontainer}>
-               <a href= {href}>
-                 <button type= "button" style={styles.button}>BOOK FLIGHT </button></a>
-            </div>
-        </div>
-        
-    );
-};
+            
+        );
+    
+}
+
+
+
 
 const styles = {
     card: {
@@ -70,4 +71,3 @@ const styles = {
     } as const
 };
 
-export default Card;

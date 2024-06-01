@@ -33,7 +33,7 @@ model UserFlightJoin {
 }
 model Flight{
     id String @id @default(cuid())
-    flightnumnber String
+    flightnumber String
     departTime DateTime
     arriveTime DateTime
     status String

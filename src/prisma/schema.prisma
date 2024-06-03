@@ -57,3 +57,7 @@ model Airport{
     arrivingFlights Flight[] @relation("arrive")
 
 }
+// to edit db:
+// npx prisma studio --schema .\src\prisma\schema.prisma
+// to push new data:
+// npx prisma studio --schema .\src\prisma\schema.prisma
